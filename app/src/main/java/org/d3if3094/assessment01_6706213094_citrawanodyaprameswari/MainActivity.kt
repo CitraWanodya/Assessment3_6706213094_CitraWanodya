@@ -30,6 +30,7 @@ abstract class MainActivity : AppCompatActivity() {
         val edBulanlalu
         val edBulanini
         val getPembayaran
+        val pemakaian
         val pemakaian = edBulanlalu - edBulanini
         val pembayaran = getPembayaran(tipe)
         binding.pemakaianTextView.text = "Pemakaian: {pemakaian}"

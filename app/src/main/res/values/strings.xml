@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Menghitung Tarif Rekening Listrik</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="tipe_meteran">Tipe Meteran</string>
+    <string name="pemakaianBulanLalu">Pemakaian Bulan Lalu</string>
+    <string name="pemakaiaBulanIni">Pemakaian Bulan Ini</string>
+    <string name="Pemakaian">Pemakaian: %1$.2f</string>
+    <string name="Pembayaran">Pembayaran: %1$s</string>
+    <string name="nama_invalid">Nama tidak boleh kosong.</string>
+    <string name="pbulanlalu_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
+    <string name="pbulanini_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
+</resources>

@@ -2,53 +2,28 @@ package org.d3if3094.assessment01_6706213094_citrawanodyaprameswari
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.text.TextUtils
-import android.util.Log
 import android.widget.Toast
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import org.d3if3094.assessment01_6706213094_citrawanodyaprameswari.databinding.ActivityMainBinding
+//import org.d3if3094.assessment01_6706213094_citrawanodyaprameswari.model.KategoriMeteran
 
-abstract class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : AppCompatActivity(){
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var navController: NavController
+
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.btnHitung.setOnClickListener {
-            hitunganTarif()
-        }
+        navController = findNavController(R.id.myNavHostFragment)
+        NavigationUI.setupActionBarWithNavController(this, navController)
     }
-    private fun hitunganTarif() {
-        Log.d("MainActivity", "Tombol diklik!")
-        val nama = binding.edNapel.toString()
-        if (TextUtils.isEmpty(nama)) {
-            Toast.makeText(this, R.string.nama_invalid, Toast.LENGTH_LONG).show()
-            return
-        }
-        val edBulanlalu
-        val edBulanini
-        val getPembayaran
-        val pemakaian
-        val pemakaian = edBulanlalu - edBulanini
-        val pembayaran = getPembayaran(tipe)
-        binding.pemakaianTextView.text = "Pemakaian: {pemakaian}"
-        binding.pembayaranTextView.text = "Pembayaran: {pembayaran}"
-
-        private fun getPembayaran(pemakaian)
-        val tipe = binding.edTipe.toString()
-            Toast.makeText(this, "Tipe tidak boleh kosong.", Toast.LENGTH_LONG).show()
-        if(tipe.equals("R1")){
-            val tarif = 300
-            val beban = 20000
-        }else if(tipe.equals("R2")){
-            val tarif = 450
-            val beban = 25000
-        }else if(tipe.equals("R3")){
-            val tarif = 600
-            val beban = 30000
-        }
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp()
     }
-
 }
+

@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Menghitung Tarif Rekening Listrik</string>
-    <string name="nama_pelanggan">Nama Pelanggan</string>
-    <string name="tipe_meteran">Tipe Meteran</string>
-    <string name="pemakaianBulanLalu">Pemakaian Bulan Lalu</string>
-    <string name="pemakaiaBulanIni">Pemakaian Bulan Ini</string>
+    <string name="namaPelanggan">Nama Pelanggan</string>
+    <string name="tipeMeteran">Tipe Meteran</string>
+    <string name="bulanLalu">Pemakaian Bulan Lalu</string>
+    <string name="bulanIni">Pemakaian Bulan Ini</string>
     <string name="Pemakaian">Pemakaian: %1$.2f</string>
     <string name="Pembayaran">Pembayaran: %1$s</string>
     <string name="nama_invalid">Nama tidak boleh kosong.</string>
-    <string name="pbulanlalu_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
-    <string name="pbulanini_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
+    <string name="bulanLalu_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
+    <string name="bulanIni_invalid">Pemakaian bulan lalu tidak boleh kosong.</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="hitung">Hitung</string>
+    <string name="pemakaian_bulan_ini">Pemakaian Bulan Ini</string>
+    <string name="pemakaian_bulan_lalu">Pemakaian Bulan Lalu</string>
+    <string name="saran_boros">Ayo berhemat dalam menggunakan listik!f</string>
+    <string name="copyright">Tarif Rekening Listrik merupakan alat bantu untuk kalian yang bingung menghitung berapa uang yang harus dikeluarkan untuk bulan ini</string>
 </resources>

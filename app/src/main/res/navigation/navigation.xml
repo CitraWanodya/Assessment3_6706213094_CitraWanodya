@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saranFragment"
+    app:startDestination="@id/saranFragment">
+    <action
+        android:id="@+id/action_hitungFragment_to_saranFragment"
+        app:destination="@id/saranFragment" />
+
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="org.d3if3094.helloworld.HitungFragment"
+        android:label="fragment_hitung"
+        tools:layout="@layout/fragment_hitung">
+        <action
+            android:id="@+id/action_hitungFragment_to_saranFragment3"
+            app:destination="@id/saranFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saranFragment"
+        android:name="org.d3if3094.helloworld.SaranFragment"
+        tools:layout="@layout/fragment_saran" >
+        <argument
+            android:name="kategori"
+            app:argType="org.d3if3094.helloworld.model.KategoriBmi" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.d3if3094.helloworld.ui.AboutFragment"
+        android:label="AboutFragment" />
+</navigation>

@@ -15,4 +15,8 @@
     <string name="pemakaian_bulan_lalu">Pemakaian Bulan Lalu</string>
     <string name="saran_boros">Ayo berhemat dalam menggunakan listik!f</string>
     <string name="copyright">Tarif Rekening Listrik merupakan alat bantu untuk kalian yang bingung menghitung berapa uang yang harus dikeluarkan untuk bulan ini</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update tarif otomatis</string>
+    <string name="notif_title">Ada data baru!</string>
+    <string name="notif_text">Cek sekarang data terbarumu..</string>
 </resources>

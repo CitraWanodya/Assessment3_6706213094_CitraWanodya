@@ -37,4 +37,20 @@ class HitungViewModel  : ViewModel() {
         return kategori
     }
 
+    fun getHasilTarif(): ListData<HasilTarif> {
+
+
+        fun scheduleUpdater(app: Application) {
+            val request = OneTimeWorkRequestBuilder<UpdateWorker>()
+                .setInitialDelay(1, TimeUnit.MINUTES)
+                .build()
+            WorkManager.getInstance(app).enqueueUniqueWork(
+                UpdateWorker.WORK_NAME,
+                ExistingWorkPolicy.REPLACE,
+                request
+            )
+        }
+
+    }
+
 }
